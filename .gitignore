@@ -1,0 +1,18 @@
+# Node.js dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# MacOS system files
+.DS_Store
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# .next
+/.next
