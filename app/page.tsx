@@ -54,38 +54,43 @@ export default function Page() {
                     <div className="grid grid-cols-1 gap-10 w-full max-w-6xl">
                         {/* Research 1 */}
                         <div className="flex flex-col md:flex-row items-center gap-4 pt-24">
-                            <div className="w-84 h-84 flex items-center justify-center">
+                            <div className="w-[450px] h-[225px] flex items-center justify-center">
                                 <img
-                                    src="/images/paper.png"
-                                    alt="Project Logo"
-                                    className="w-[100px] h-[100px] max-w-full max-h-full"
+                                    src="/images/doe.png"
+                                    alt="DOE Logo"
+                                    className="w-full h-full object-contain"
                                 />
                             </div>
-                            <div className="flex-1 bg-gray-100 p-6 rounded-lg">
-                                <h2 className="text-2xl font-bold mb-2">Research 1</h2>
-                                <p className="text-lg text-darkGreen">
-                                    A brief description of the project goes here. Explain what the project is about and its features.
+                            <div className="flex-1 p-6 rounded-lg">
+                                <h2 className="text-3xl font-bold mb-2 text-darkGreen">Power Outage Detection</h2>
+                                <p className="text-xl text-lightGreen">
+                                    I contributed to developing a custom deep learning model to predict power outages across the U.S. using satellite imagery,
+                                    a project commissioned by the Department of Energy—combining innovation with real-world impact is what drives me.
                                 </p>
                             </div>
                         </div>
                         {/* Research 2 */}
-                        <div className="flex flex-col md:flex-row items-center gap-4">
-                            <div className="flex-1 bg-gray-100 p-6 rounded-lg">
-                                <h2 className="text-2xl font-bold mb-2">Research 2</h2>
-                                <p className="text-lg text-darkGreen">
-                                    A brief description of the project goes here. Explain what the project is about and its features.
-                                </p>
-                            </div>
-                            <div className="w-84 h-84 flex items-center justify-center">
+                        <div className="flex flex-col md:flex-row items-center gap-4 pt-24">
+                            <div className="w-[450px] h-[225px] flex items-center justify-center">
                                 <img
-                                    src="/images/transformer.svg"
-                                    alt="Project Logo"
-                                    className="w-[350px] h-[350px] max-w-full max-h-full"
+                                    src="/images/cw.svg"
+                                    alt="Case Western Logo"
+                                    className="w-full h-full object-contain pl-200"
                                 />
+                            </div>
+                            <div className="flex-1 p-6 rounded-lg">
+                                <h2 className="text-3xl font-bold mb-2 text-darkGreen">Visiting Scholar</h2>
+                                <p className="text-xl text-lightGreen">
+                                    At Case Western, I integrated CDC mortality data with DOE outage stats (2016-2024) to reveal how social, economic,
+                                    and climate factors affect mortality—work presented at the Tohoku Symposium. I’m passionate about blending diverse disciplines
+                                    and cutting-edge technologies to drive meaningful insights.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </section>
+
+
 
                 {/* Projects */}
                 <section className="min-h-screen bg-offWhite flex flex-col items-center justify-center md:px-20 font-nunito">
