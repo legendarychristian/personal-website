@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        offWhite: "#edf6f9",
-        darkGreen: "#006d77",
-        lightGreen: "#83c5be",
+        offWhite: "#EDF6F9",
+        darkGreen: "#003eb4",
+        lightGreen: "#5acbff",
       },
       fontFamily: {
         nunito: ['Nunito Sans', 'sans-serif'], // Add Jost as a custom font

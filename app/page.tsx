@@ -1,4 +1,5 @@
 "use client";
+import { Parallax } from 'react-scroll-parallax';
 
 export default function Page() {
     return (
@@ -6,63 +7,69 @@ export default function Page() {
             <div className="flex flex-col">
 
                 {/* Landing Page */}
-                <section className="min-h-screen bg-offWhite flex items-center justify-between md:px-72 font-nunito">
-                    <div className="max-w-lg ">
-                        <h1 className="text-7xl font-bold leading-tight text-lightGreen">
-                            Hi, my name is <span className="text-darkGreen">Christian</span>
-                        </h1>
-                        <p className="mt-4 text-2xl text-lightGreen">
-                            I'm a{" "}
-                            <span className="font-semibold text-darkGreen">
-                                software engineer
-                            </span>{" "}
-                            from Orlando, Florida.
-                        </p>
+                <section className="min-h-[120vh] bg-offWhite flex items-center justify-between md:px-72 pb-48 font-nunito">
+                    <Parallax speed={-10}>
+                        <div className="max-w-lg">
+                            <h1 className="text-7xl font-bold leading-tight text-lightGreen">
+                                Hi, my name is <span className="text-darkGreen">Christian</span>
+                            </h1>
+                            <p className="mt-4 text-2xl text-lightGreen">
+                                I'm a{" "}
+                                <span className="font-semibold text-darkGreen">
+                                    software engineer
+                                </span>{" "}
+                                from Orlando, Florida.
+                            </p>
 
-                        {/* Buttons */}
-                        <div className="mt-8 flex gap-6">
-                            {/* View Projects Button */}
-                            <a
-                                href="#projects"
-                                className="border-2 border-lightGreen text-lightGreen text-xl font-bold px-8 py-4 rounded-md hover:bg-lightGreen hover:text-darkGreen transition-all duration-300"
-                            >
-                                VIEW PROJECTS
-                            </a>
+                            {/* Buttons */}
+                            <div className="mt-8 flex gap-6">
+                                {/* View Projects Button */}
+                                <a
+                                    href="#projects"
+                                    className="border-2 border-lightGreen text-lightGreen text-xl font-bold px-8 py-4 rounded-md hover:bg-lightGreen hover:text-darkGreen transition-all duration-300"
+                                >
+                                    VIEW PROJECTS
+                                </a>
 
-                            {/* View Resume Button */}
-                            <a
-                                href="#resume"
-                                className="text-lightGreen text-xl font-bold px-8 py-4 hover:underline transition-all duration-300"
-                            >
-                                VIEW RESUME
-                            </a>
+                                {/* View Resume Button */}
+                                <a
+                                    href="#resume"
+                                    className="text-lightGreen text-xl font-bold px-8 py-4 hover:underline transition-all duration-300"
+                                >
+                                    VIEW RESUME
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                    </Parallax>
                     <div className="relative flex-shrink-0">
                         <div className="absolute inset-0 bg-blue-100 h-40 w-40 transform rotate-45 opacity-50"></div>
                         <img
                             src="/images/profile_picture.JPG"
-                            alt="Robb Illustration"
+                            alt="Christian's Image"
                             className="relative w-80 h-auto z-10"
                         />
                     </div>
                 </section>
 
                 {/* Research */}
-                <section className="min-h-screen bg-offWhite flex flex-col items-center justify-center md:px-20 font-nunito">
-                    <h1 className="text-7xl font-bold leading-tight text-darkGreen">Research</h1>
+                <section className="min-h-[120vh] bg-offWhite flex flex-col items-center justify-center md:px-20 font-nunito">
+                    <Parallax translateY={['-50px', '0px']}>       
+                        <h1 className="text-7xl font-bold leading-tight text-darkGreen">Research</h1>
+                    </Parallax>
                     <div className="grid grid-cols-1 gap-10 w-full max-w-6xl">
                         {/* Research 1 */}
-                        <div className="flex flex-col md:flex-row items-center gap-4 pt-24">
-                            <div className="w-[450px] h-[225px] flex items-center justify-center">
-                                <img
-                                    src="/images/doe.png"
-                                    alt="DOE Logo"
-                                    className="w-full h-full object-contain"
-                                />
-                            </div>
+                        <div className="flex flex-col md:flex-row items-center gap-4 pt-12">
+                            <Parallax translateX={['-75px', '0px']}>
+                                <div className="w-[450px] h-[225px] flex items-center justify-center">
+                                    <img
+                                        src="/images/doe.png"
+                                        alt="DOE Logo"
+                                        className="w-full h-full object-contain"
+                                    />
+                                </div>
+                            </Parallax>
                             <div className="flex-1 p-6 rounded-lg">
-                                <h2 className="text-3xl font-bold mb-2 text-darkGreen">Power Outage Detection</h2>
+                                <h2 className="text-3xl mb-2 text-darkGreen">Power Outage Detection</h2>
                                 <p className="text-xl text-lightGreen">
                                     I contributed to developing a custom deep learning model to predict power outages across the U.S. using satellite imagery,
                                     a project commissioned by the Department of Energy—combining innovation with real-world impact is what drives me.
@@ -70,16 +77,18 @@ export default function Page() {
                             </div>
                         </div>
                         {/* Research 2 */}
-                        <div className="flex flex-col md:flex-row items-center gap-4 pt-24">
-                            <div className="w-[450px] h-[225px] flex items-center justify-center">
-                                <img
-                                    src="/images/cw.svg"
-                                    alt="Case Western Logo"
-                                    className="w-full h-full object-contain pl-200"
-                                />
-                            </div>
+                        <div className="flex flex-col md:flex-row items-center gap-4 pt-12">
+                            <Parallax translateX={['-75px', '0px']}>
+                                <div className="w-[450px] h-[225px] flex items-center justify-center translate-x-[40px]">
+                                    <img
+                                        src="/images/cw.svg"
+                                        alt="Case Western Logo"
+                                        className="w-full h-full object-contain"
+                                    />
+                                </div>
+                            </Parallax>
                             <div className="flex-1 p-6 rounded-lg">
-                                <h2 className="text-3xl font-bold mb-2 text-darkGreen">Visiting Scholar</h2>
+                                <h2 className="text-3xl mb-2 text-darkGreen">Visiting Scholar</h2>
                                 <p className="text-xl text-lightGreen">
                                     At Case Western, I integrated CDC mortality data with DOE outage stats (2016-2024) to reveal how social, economic,
                                     and climate factors affect mortality—work presented at the Tohoku Symposium. I’m passionate about blending diverse disciplines
