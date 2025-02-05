@@ -1,16 +1,18 @@
+"use client";
 import './globals.css'
-import { Providers } from './Providers';
+import { AnimatePresence } from "framer-motion";
+import { ParallaxProvider } from "react-scroll-parallax";
 
-export default function RootLayout({
-    children,
-  }: {
-    children: React.ReactNode
-  }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-      <html lang="en">
-        <body>
-          <Providers> {children} </Providers>
-        </body>
-      </html>
-    )
-  }
+        <html lang="en">
+            <body>
+                <ParallaxProvider>
+                    <AnimatePresence mode="wait">
+                        {children}
+                    </AnimatePresence>
+                </ParallaxProvider>
+            </body>
+        </html>
+    );
+}
