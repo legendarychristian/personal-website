@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function ResearchSection() {
     return (
-        <section id="research" className="min-h-[120vh] bg-offWhite flex flex-col items-center justify-center md:px-20 font-nunito">
+        <section id="research" className="min-h-[120vh] bg-offWhite flex flex-col items-center justify-center md:px-20 pt-48 font-nunito">
             <Parallax translateY={["-200px", "0px"]}>
                 <h1 className="text-7xl font-bold leading-tight text-darkGreen">Research</h1>
             </Parallax>

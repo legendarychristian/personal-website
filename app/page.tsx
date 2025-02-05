@@ -9,8 +9,8 @@ export default function Page() {
         <main>
             <Layout>
                 <HeroSection />
-                <ResearchSection />
                 <ProjectsSection />
+                <ResearchSection />
                 <AboutSection />
             </Layout>
 

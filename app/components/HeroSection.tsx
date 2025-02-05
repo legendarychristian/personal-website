@@ -3,7 +3,7 @@ import { Parallax } from 'react-scroll-parallax';
 
 export default function HeroSection() {
     return (
-        <section id="home" className="min-h-[150vh] bg-offWhite flex items-center justify-between md:px-48 pb-96 font-nunito">
+        <section id="home" className="min-h-[120vh] bg-offWhite flex items-center justify-between md:px-48 pb-48 font-nunito">
             <Parallax speed={-20}>
                 <div className="max-w-2xl">
                     <h1 className="text-6xl leading-tight text-lightGreen">
