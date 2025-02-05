@@ -21,17 +21,6 @@ export default function ProjectsSection() {
                         </h3>
                     </a>
 
-                    {/* Project 2 - Genetic Algorithm */}
-                    {/* <a href="/details/genetic-algorithm" className="flex flex-col items-center space-y-4 cursor-pointer group">
-                                <div className="w-32 h-32 rounded-full bg-green-300 flex items-center justify-center overflow-hidden transition-transform duration-300 group-hover:scale-105">
-                                    <img src="/images/genetic-algorithm.png" alt="Genetic Algorithm Project" className="w-full h-full object-cover" />
-                                </div>
-                                
-                                <h3 className="text-xl font-bold text-darkGreen group-hover:text-blue-500 transition">
-                                    Genetic Algorithm
-                                </h3>
-                            </a> */}
-
                     {/* Project 3 - Machine Learning: LSTM on Stocks */}
                     <a href="https://github.com/legendarychristian/SP500-LSTM-Analysis/tree/main" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center space-y-4 cursor-pointer group">
                         {/* Image Container */}

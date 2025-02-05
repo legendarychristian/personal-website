@@ -22,7 +22,7 @@ export default function ResearchSection() {
                         <div className="p-4 cursor-pointer bg-offWhite rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:bg-darkGreen hover:text-white group">
                             <div className="p-6 rounded-lg">
                                 <h2 className="font-bold text-3xl mb-2 text-darkGreen md:pb-4 group-hover:text-offWhite transition">
-                                    Power Outage Detection
+                                    Power Outage Satellite Detection
                                 </h2>
                                 <p className="text-xl text-darkGreen group-hover:text-offWhite transition">
                                     I contributed to developing a custom deep learning model to predict power outages across the U.S. using satellite imagery,

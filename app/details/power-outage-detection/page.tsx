@@ -22,24 +22,28 @@ export default function PowerOutageDetection() {
             transition={{ duration: 0.6, ease: "easeInOut" }}
             className="min-h-screen bg-offWhite flex flex-col items-center justify-center px-10 py-20 font-nunito"
         >
-            <div className="max-w-5xl text-center">
-                <h1 className="text-5xl font-bold font-nunito text-darkGreen mb-6">Power Outage Detection</h1>
+            <div className="max-w-5xl">
+                <h1 className="text-5xl font-bold font-nunito text-darkGreen mb-6 text-center">Power Outage Detection</h1>
 
+                <h1 className="text-3xl font-bold font-nunito text-darkGreen mb-6 text-center pt-10">Why</h1>
                 <p className="text-xl text-gray-700 mb-6">
-                    At Davis Research Group, my role involved using artificial intelligence to analyze
-                    satellite imagery and predict power outages across the United States.
+                    Power outages are increasingly disruptive due to aging infrastructure and extreme weather events, 
+                    yet most monitoring systems only react after failures occur. Our AI-driven solution predicts outage 
+                    risks before they happen, helping utilities and emergency responders take proactive measures.
                 </p>
 
+                <h1 className="text-3xl font-bold font-nunito text-darkGreen mb-6 text-center pt-10">What</h1>
                 <p className="text-xl text-gray-700 mb-6">
-                    This challenged my expertise in PyTorch, pushing me to become highly proficient with
-                    the library. I experimented with various deep learning models, including graph
-                    attention networks and UNET, and became adept at working with high-performance
-                    computing systems.
+                    We use AI-powered risk mapping to analyze satellite imagery and identify power outage vulnerabilities at 
+                    a pixel level. Our technology provides real-time, high-precision insights that help strengthen grid 
+                    resilience and optimize response strategies.
                 </p>
 
+                <h1 className="text-3xl font-bold font-nunito text-darkGreen mb-6 text-center pt-10">How</h1>
                 <p className="text-xl text-gray-700 mb-8">
-                    I gained valuable experience in training, testing, and validating custom AI models,
-                    one of which was presented at IEEE PVSC.
+                    Our AI model processes high-resolution satellite images, detecting environmental and infrastructure risks that 
+                    contribute to power failures. By assigning risk scores to each pixel, we generate detailed heatmaps that guide 
+                    utilities, governments, and emergency teams in preventing outages.
                 </p>
 
                 {/* Image Section */}
