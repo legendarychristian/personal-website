@@ -1,10 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 export default function AboutSection() {
-    const socialLinks = [
-        { href: "https://linkedin.com/in/christianjairolopez", icon: <FaLinkedin className="text-8xl" /> },
-        { href: "mailto:christian.jairolopez@gmail.com", icon: <FaEnvelope className="text-8xl" /> },
-        { href: "https://github.com/legendarychristian", icon: <FaGithub className="text-8xl" /> }
-    ];
     return (
 
         <section id="about" className="min-h-screen bg-[#252456] flex flex-col font-openSans" >
@@ -31,19 +25,6 @@ export default function AboutSection() {
                     <p className="mt-4 text-xl text-[#B2B5DA] font-light leading-relaxed">
                         If you'd like to learn more about me, feel free to reach out to me on any of the following platforms:
                     </p>
-                    <div className="flex gap-24 justify-center py-16">
-                        {socialLinks.map((link, index) => (
-                            <a
-                                key={index}
-                                href={link.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-gray-400 hover:text-white text-3xl transition-colors duration-300"
-                            >
-                                {link.icon}
-                            </a>
-                        ))}
-                    </div>
                     <p className="mt-4 text-xl text-[#B2B5DA] font-light leading-relaxed">
                         I look forward to hearing from you!
                     </p>

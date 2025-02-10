@@ -13,7 +13,6 @@ export default function VisitingScholar() {
         }, 100); // Scroll after a small delay to ensure navigation is complete
     };
 
-
     return (
         <motion.section
             key="detail-page"

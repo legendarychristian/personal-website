@@ -1,4 +1,3 @@
-"use client"
 export default function HeroSection() {
     return (
         <section id="home" className="min-h-screen bg-b1 flex items-center font-openSans">
