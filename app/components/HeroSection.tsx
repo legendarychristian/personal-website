@@ -1,51 +1,35 @@
 "use client"
-import { Parallax } from 'react-scroll-parallax';
-
 export default function HeroSection() {
     return (
-        <section id="home" className="min-h-[120vh] bg-offWhite flex items-center justify-between md:px-48 pb-48 font-nunito">
-            <Parallax speed={-20}>
-                <div className="max-w-2xl">
-                    <h1 className="text-6xl leading-tight text-lightGreen">
-                        Hi, my name is <span className="text-darkGreen font-bold ">Christian</span>
+        <section id="home" className="min-h-screen bg-b1 flex items-center font-openSans">
+            <div className="w-full flex flex-row items-center">
+                <div className="w-1/2 flex flex-col items-start px-36">
+                    <h1 className="text-6xl text-b3 font-light pb-8">
+                        Hi, my name is {" "}
                     </h1>
-                    <p className="mt-4 text-2xl text-lightGreen">
+                    <h1 className="text-6xl text-b3 font-bold">
+                        Christian
+                    </h1>
+                    <p className="text-3xl text-b2 py-12 font-light">
                         I'm a{" "}
-                        <span className="font-semibold text-darkGreen">
+                        <span className="font-bold">
                             software engineer
                         </span>{" "}
                         from Orlando, Florida.
                     </p>
-
-                    {/* Buttons */}
-                    <div className="mt-8 flex gap-6">
-                        {/* View Projects Button */}
-                        <a
-                            href="#projects"
-                            className="border-2 border-lightGreen text-lightGreen text-xl font-bold px-8 py-4 rounded-md hover:bg-lightGreen hover:text-darkGreen transition-all duration-300"
-                        >
-                            VIEW PROJECTS
-                        </a>
-
-                        {/* View Resume Button */}
-
-                        <a
-                            href="/resume.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-lightGreen text-xl font-bold px-8 py-4 hover:underline transition-all duration-300"
-                        >
-
-                            VIEW RESUME
-                        </a>
+                    <div className="flex flex-row gap-8">
+                        <button className="lg:w-40 md:w-32 sm:w-28 bg-[#CDE9F5] text-b2 font-light border border-[#C1D6DF] rounded-full hover:bg-b3 hover:text-white transition-all duration-300 py-2 px-4">
+                            <a href="#projects">View Projects</a>
+                        </button>
+                        <button className="lg:w-40 md:w-32 sm:w-28 bg-[#CDE9F5] text-b2 font-light border border-[#C1D6DF] rounded-full hover:bg-b3 hover:text-white transition-all duration-300 py-2 px-4">
+                            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+                        </button>
                     </div>
                 </div>
-            </Parallax>
-            {/* Right - Circular Image */}
-            <div className="w-[50vh] h-[50vh] mt-6 md:mt-0 flex items-center justify-center">
-                <img src="/images/computer.svg" alt="Christian Lopez" className="max-w-full max-h-full" />
+                <div className="w-1/2 flex items-center justify-center pr-36">
+                    <img src="/images/computer.svg" alt="Christian Lopez" className="max-w-full max-h-full" />
+                </div>
             </div>
-
         </section>
     );
 }

@@ -20,27 +20,27 @@ export default function PowerOutageDetection() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 0 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
-            className="min-h-screen bg-offWhite flex flex-col items-center justify-center px-10 py-20 font-nunito"
+            className="min-h-screen bg-offWhite flex flex-col items-center justify-center px-10 py-20 font-openSans"
         >
             <div className="max-w-5xl">
-                <h1 className="text-5xl font-bold font-nunito text-darkGreen mb-6 text-center">Power Outage Detection</h1>
+                <h1 className="text-5xl font-bold text-darkGreen mb-6 text-center">Power Outage Detection</h1>
 
-                <h1 className="text-3xl font-bold font-nunito text-darkGreen mb-6 text-center pt-10">"WHY"</h1>
-                <p className="text-xl text-darkGreen mb-6">
+                <h1 className="text-3xl font-bold text-darkGreen mb-6 text-center pt-10">"WHY"</h1>
+                <p className="text-xl text-darkGreen font-light mb-6">
                     Power outages are increasingly disruptive due to aging infrastructure and extreme weather events, 
                     yet most monitoring systems only react after failures occur. Our AI-driven solution predicts outage 
                     risks before they happen, helping utilities and emergency responders take proactive measures.
                 </p>
 
-                <h1 className="text-3xl font-bold font-nunito text-darkGreen mb-6 text-center pt-10">"WHAT"</h1>
-                <p className="text-xl text-darkGreen mb-6">
+                <h1 className="text-3xl font-bold text-darkGreen mb-6 text-center pt-10">"WHAT"</h1>
+                <p className="text-xl text-darkGreen font-light mb-6">
                     We use AI-powered risk mapping to analyze satellite imagery and identify power outage vulnerabilities at 
                     a pixel level. Our technology provides real-time, high-precision insights that help strengthen grid 
                     resilience and optimize response strategies.
                 </p>
 
-                <h1 className="text-3xl font-bold font-nunito text-darkGreen mb-6 text-center pt-10">"HOW"</h1>
-                <p className="text-xl text-darkGreen mb-8">
+                <h1 className="text-3xl font-bold text-darkGreen mb-6 text-center pt-10">"HOW"</h1>
+                <p className="text-xl text-darkGreen font-light mb-8">
                     Our AI model processes high-resolution satellite images, detecting environmental and infrastructure risks that 
                     contribute to power failures. By assigning risk scores to each pixel, we generate detailed heatmaps that guide 
                     utilities, governments, and emergency teams in preventing outages.
@@ -62,8 +62,7 @@ export default function PowerOutageDetection() {
                 {/* Back Button */}
                 <button
                     onClick={handleBack}
-                    className="mt-8 px-6 py-3 bg-lightGreen text-white font-bold rounded-lg shadow-lg hover:bg-darkGreen transition duration-300"
-                >
+                    className="lg:w-48 md:w-32 sm:w-28 bg-[#CDE9F5] text-b2 font-light border border-[#C1D6DF] rounded-full hover:bg-b3 hover:text-white transition-all duration-300 py-2 px-4">
                     ← Back to Research
                 </button>
             </div>

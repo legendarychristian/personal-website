@@ -23,26 +23,26 @@ export default function VisitingScholar() {
             transition={{ duration: 0.6, ease: "easeInOut" }}
             className="min-h-screen bg-offWhite flex flex-col items-center justify-center px-10 py-20 font-nunito"
         >
-            <div className="max-w-5xl">
-                <h1 className="text-5xl font-bold font-nunito text-darkGreen mb-6 text-center">Visiting Scholar: Social Vulnerability Study</h1>
+            <div className="max-w-5xl font-openSans">
+                <h1 className="text-5xl font-bold text-darkGreen mb-6 text-center">Visiting Scholar: Social Vulnerability Study</h1>
 
-                <h1 className="text-3xl font-bold font-nunito text-darkGreen mb-6 text-center pt-10">"WHY"</h1>
-                <p className="text-xl text-darkGreen mb-6">
+                <h1 className="text-3xl text-darkGreen font-bold mb-6 text-center pt-10">"WHY"</h1>
+                <p className="text-xl text-darkGreen font-light mb-6">
                     Power outages disrupt access to essential resources like clean water, food, and healthcare, disproportionately
                     affecting vulnerable communities. Understanding how outages influence mortality rates at a granular level can
                     help policymakers and emergency responders mitigate risks and protect lives.
                 </p>
 
-                <h1 className="text-3xl font-bold font-nunito text-darkGreen mb-6 text-center pt-10">"WHAT"</h1>
-                <p className="text-xl text-darkGreen mb-6">
+                <h1 className="text-3xl text-darkGreen font-bold mb-6 text-center pt-10">"WHAT"</h1>
+                <p className="text-xl text-darkGreen font-light mb-6">
                     This project analyzes power outage data (2016–2024) from the Department of Energy (DOE) alongside mortality
                     data and social vulernability data from the Centers for Disease Control (CDC) to identify trends at the county and zip code level.
                     By examining social, economic, climate, and weather factors, we aim to quantify the relationship
                     between power outages and mortality rates over time.
                 </p>
 
-                <h1 className="text-3xl font-bold font-nunito text-darkGreen mb-6 text-center pt-10">"HOW"</h1>
-                <p className="text-xl text-darkGreen mb-8">
+                <h1 className="text-3xl font-bold text-darkGreen mb-6 text-center pt-10">"HOW"</h1>
+                <p className="text-xl text-darkGreen font-light mb-8">
                     Using statistical modeling and data visualization, we uncover patterns that reveal which communities are
                     most at risk during outages. The insights from this study will empower stakeholders to implement targeted
                     interventions, improve disaster preparedness, and develop resilience strategies to reduce preventable deaths
@@ -64,8 +64,7 @@ export default function VisitingScholar() {
                 {/* Back Button */}
                 <button
                     onClick={handleBack}
-                    className="mt-8 px-6 py-3 bg-lightGreen text-white font-bold rounded-lg shadow-lg hover:bg-darkGreen transition duration-300"
-                >
+                    className="lg:w-48 md:w-32 sm:w-28 bg-[#CDE9F5] text-b2 font-light border border-[#C1D6DF] rounded-full hover:bg-b3 hover:text-white transition-all duration-300 py-2 px-4">
                     ← Back to Research
                 </button>
             </div>
