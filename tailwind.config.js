@@ -18,9 +18,12 @@ module.exports = {
       fontFamily: {
         nunito: ['Nunito Sans', 'sans-serif'], // Add Jost as a custom font
         openSans: ['Open Sans', 'sans-serif'],
-    },
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [
+    require('tailwindcss-motion'),
+    require('tailwindcss-intersect')
+  ],
+};
 
