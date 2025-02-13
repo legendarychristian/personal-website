@@ -28,7 +28,7 @@ export default function ResearchSection() {
 
             <div className="w-full flex flex-col md:flex-row items-center justify-center gap-6 sm:gap-12 px-4 sm:px-12 md:px-24 py-8">
                 <div className="w-full md:w-1/3 bg-transparent rounded-xl flex items-center justify-center">
-                    <img src="/images/cw.svg" alt="CW" className="w-auto h-auto max-w-full max-h-48 sm:max-h-64 md:max-h-96 object-contain" />
+                    <img src="/images/cw.svg" alt="CW" className="w-auto h-auto max-w-full max-h-48 sm:max-h-64 md:max-h-48 object-contain" />
                 </div>
                 <div className="w-full md:w-2/3 bg-transparent">
                     <h2 className="text-2xl sm:text-3xl text-[#EEF1FD] font-bold p-2 sm:p-4">
