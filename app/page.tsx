@@ -13,7 +13,6 @@ export default function Page() {
                 <ResearchSection />
                 <AboutSection />
             </Layout>
-
         </main>
     );
 }
