@@ -22,7 +22,7 @@ export default function HeroSection() {
                 <a href="#projects">View Projects</a>
               </button>
               <button className="w-full sm:w-40 bg-[#CDE9F5] text-b2 font-light border border-[#C1D6DF] rounded-full hover:bg-b3 hover:text-white transition-all duration-300 py-2 px-4">
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+                <a href="#about">About Me</a>
               </button>
             </div>
           </div>
